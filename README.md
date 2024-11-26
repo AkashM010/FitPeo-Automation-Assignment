@@ -54,13 +54,24 @@ mvn clean install
 
 ### **Step 4: Run the Tests**
 1. Navigate to the `src/test/java` directory.
-2. Locate the `task` test class:
-   - In Eclipse: Right-click the `task` class and select `Run As > TestNG Test`.
-   - Or **In Eclipse**: Right-click `testng.xml` and select `Run As > TestNG Suite`.
-   - Using Maven from the terminal:
+
+2. **Run the Tests in Eclipse**:
+   - **Option 1**: Locate the `task` test class, right-click on it, and select `Run As > TestNG Test`.
+   - **Option 2**: Locate the `testng.xml` file in your project, right-click on it, and select `Run As > TestNG Suite`.
+
+3. **Run the Tests Using Maven**:
+   - Open a terminal in the project's root directory (where the `pom.xml` file is located).
+   - Execute the following command:
      ```bash
      mvn test
      ```
+
+4. **Run on Other IDEs**:
+   - This code is compatible with other popular IDEs like **IntelliJ IDEA** or **VS Code**:
+     - Open the project in your preferred IDE.
+     - Use the built-in TestNG or Maven plugins to run the tests:
+       - In IntelliJ IDEA, you can right-click the `testng.xml` file or the `task` class and select `Run`.
+       - In VS Code, ensure the **TestNG** and **Maven** extensions are installed, then execute the tests similarly.
 
 ---
 
